@@ -1,8 +1,20 @@
-.nav {
-  /* background: #025159!important; */
-  height: 80px!important;
+/* .nav {
+  background:white!important;
+  height: 100px!important;
+
+} */
+
+#rhlogo {
+  position: relative;
+  top: 15px;
 }
 
-/* Navbar {
-  color: black!important;
-} */
+.navItem {
+  color: #0D0D0D !important;
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+nav .sidenav-trigger {
+  color: #0D0D0D;
+}

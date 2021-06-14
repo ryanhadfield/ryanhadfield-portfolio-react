@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Swapify",
+        "image": "./../img/Swapify-screenshot-welcome.png",
+        "info": "Swapify is a React App that allows users to list, connect, and swap items with other nearby users in an easy to use and intuitive web application.",
+        "website": "https://swapify-us.herokuapp.com/",
+        "github": "https://github.com/pfvatterott/Swapify"
+    },
+    {
+        "id": 2,
+        "name": "N-DEVR",
+        "image": "./../img/NDEVR-landingpage.png",
+        "info": "N-DEVR aims to help adventure seekers plan out their outdoor activities & endeavors. Our team's mission is to easily allow our active outdoor community to plan, organize, and include friends in outdoor pursuits and goals.",
+        "website": "https://ndevr.herokuapp.com/",
+        "github": "https://github.com/ryanhadfield/N-DEVR"
+    },
+    {
+        "id": 3,
+        "name": "Best Snow",
+        "image": "./../img/readme-screenshot5.png",
+        "info": "Best Snow is a site built for snow enthusiasts by snow enthusiasts. With Best Snow you'll be able to decide where to head out on your next snowy backcountry adventure.  We provide you with the ability to see, at a glance, the snowpack levels in the western United States.  You’ll be able decide if your want to hit your local mtns or venture out to other ranges in the US.",
+        "website": "https://ryanhadfield.github.io/Best-Snow/",
+        "github": "https://github.com/ryanhadfield/Best-Snow"
+    },
+    {
+        "id": 4,
+        "name": "Wasatch Burgers",
+        "image": "./../img/wasatch-burgers-screengrab.png",
+        "info": "Wasatch Burgers is a restaurant app that lets users input the names of burgers they'd like to eat. The app allows the user to use a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). The app follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+        "website": "https://wasatch-burgers.herokuapp.com/",
+        "github": "https://github.com/ryanhadfield/Wasatch-Burgers"
+    }
+
+]

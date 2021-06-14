@@ -1,7 +1,33 @@
 #mainImg {
-    width: 50%;
+  width: 300px;
+  height: 300px;
 }
 
 .main {
-    background-color:rgba(130, 174, 187, 0.795);
+  /* background-color: #04ADBF; */
+  margin-top: 50px !important;
+  border-radius: 20px;
+}
+
+
+body {
+  background: radial-gradient(#F2E0D0, white);
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100% !important;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.mainText{
+  color: #0D0D0D !important;
+  font-family: "Montserrat", sans-serif!important;
+}
+
+.title{
+  font-family: "Montserrat", sans-serif!important;
+  color: #3574F2
 }

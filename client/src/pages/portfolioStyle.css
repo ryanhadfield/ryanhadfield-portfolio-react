@@ -1,0 +1,7 @@
+ProjectCard {
+height: 300px!important;
+}
+
+div.hoverable.card {
+    height: 400px
+}

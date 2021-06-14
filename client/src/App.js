@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import logo from './RH-color-logo.png';
 import Main from "./pages/Main";
 import Portfolio from "./pages/Portfolio";
@@ -13,13 +13,15 @@ import './App.css';
 function App() {
   return (
     <Router>
-    <div className="App">
-      <CustomNavbar></CustomNavbar>
+      <div className="App">
+        <CustomNavbar />
+        <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
-      <CustomFooter></CustomFooter>
-    </div>
+        </Switch>
+        <CustomFooter />
+      </div>
     </Router>
   );
 }
