@@ -1,11 +1,12 @@
 
 import React from "react";
+// import { Link } from 'react-router-dom'
 import "./style.css";
 import "materialize-css";
 import { Card, Icon, CardTitle } from "react-materialize";
 
 function ProjectCard(props) {
-    return (
+      return (
         <Card
             className="hoverable"
             closeIcon={<Icon>close</Icon>}
@@ -15,12 +16,12 @@ function ProjectCard(props) {
             title={props.name}
         >
             <p>
-        <a href={props.website}>
+        <a target="_blank" href={props.website} >
           Website
         </a>
       </p>  
       <p>
-        <a href={props.github}>
+        <a target="_blank" href={props.github} >
           GitHub
         </a>
       </p>      

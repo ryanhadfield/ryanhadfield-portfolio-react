@@ -9,11 +9,20 @@ import ProjectCard from "./../components/ProjectCard/index.js";
 function Portfolio() {
   return (
     <Container className="container my-5 py-5">
-      <motion.h1 className="display-4 text-dark my-5 center"
+      <motion.h1 className="display-4 text-dark my-5 center portfolio"
+      animate={{ y: 0, opacity: 1 }}
+      initial={{ y: -250, opacity: 0 }}
+      transition={{
+        delay: 1,
+        duration: 2,
+        type: "spring",
+        stiffness: 150,
+      }}
       >Portfolio</motion.h1>
       <Row className="row">
         <Col
-         className="col s12 m12"
+         m={6}
+         s={12}
         >
           <ProjectCard
           name={projects[0].name}
@@ -24,7 +33,8 @@ function Portfolio() {
           />
         </Col>
         <Col
-          
+          m={6}
+          s={12}
         >
           <ProjectCard
            name={projects[1].name}

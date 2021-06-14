@@ -5,7 +5,7 @@ import Main from "./pages/Main";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import CustomNavbar from './components/Navbar';
-import Wrapper from "./components/Wrapper";
+// import Wrapper from "./components/Wrapper";
 import CustomFooter from './components/Footer';
 import './App.css';
 
