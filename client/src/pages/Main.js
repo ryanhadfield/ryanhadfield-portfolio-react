@@ -32,8 +32,8 @@ function Main() {
           className="float-left m-3 circle z-depth-3"
           alt="Headshot of Ryan Hadfield"
         />
-        <motion.h1 className="display-3 title"
-          animate={{ x: 10 , opacity: 1, scale: 1 }}
+        <motion.h1 className="display-3 myName"
+          animate={{ x: 10 , opacity: 1, scale: 1, color: "#081585" }}
           initial={{ opacity: 0, scale: 0 }}
           transition={{
             delay: 2.1,
@@ -44,15 +44,11 @@ function Main() {
         >Ryan Hadfield</motion.h1>
         <p className="flow-text mainText">
           Hi! I'm <b>Ryan</b>, a native Marylander now living in the
-        beautiful Wasatch Mtns of Utah. I'm a full-stack web developer whose passionate about
-        technology, the outdoors, travel, and design. I feel most inspired when
-        spending time with people or in nature, whether in the mountains, desert, or ocean.
-        When not behind a screen you can find me rock climbing, mtn biking,
-        hiking, SUPing, skiing, or out flying my drone.
+        beautiful Wasatch Mtns of Utah.  A Full Stack Web Developer with a background in sales, project management, marketing, and product development. Graduate of the University of Utah Coding Boot Camp with skills in HTML, CSS, JavaScript, and MERN stack. Excited about collaborating with others, learning new technologies, and building something innovative. I'm passionate about technology, the outdoors, travel, and design.
       </p>
         <p className="flow-text mainText">
-          I've spent the last 20 years working in the outdoor sport & toy / collectible industries in product development, sales, marketing, and supply chain.
-          I've worked with brands such as Black Diamond, Marvel, Disney, Grivel, and REI. I love designing, developing, and working with people to bring ideas to reality. As a full-stack web developer, I'm able to utilize my years of experience in business to not only physical products but digital products as well.
+          I've spent the last 20 years working in the outdoor sport & toy / collectible industries.
+          I've worked with brands such as Black Diamond, Marvel, Disney, Grivel, and REI.  As a full-stack web developer, I'm excited to combine my years of experience in business with a career in tech. 
       </p>
       </motion.div>
     </div>

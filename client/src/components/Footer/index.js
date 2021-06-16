@@ -6,12 +6,14 @@ import "./style.css";
 
 const CustomFooter = (props) => {
   return (
+    <div className="container">
           <footer
-            className="valign-wrapper center-align"
+            className="valign-wrapper center"
             // copyrights="&copy; 2021 Ryan Hadfield"
           >
-            <span className="center-align">&copy; 2021 Ryan Hadfield</span>
+            <span className="center">&copy; 2021 Ryan Hadfield</span>
           </footer>
+          </div>
   );
 };
 

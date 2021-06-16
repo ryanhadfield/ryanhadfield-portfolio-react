@@ -10,12 +10,12 @@
 }
 
 
-body {
+/* body {
   background: radial-gradient(#F2E0D0, white);
   background-size: cover !important;
   background-position: center !important;
   height: 100% !important;
-}
+} */
 
 body,
 html {
@@ -27,7 +27,10 @@ html {
   font-family: "Montserrat", sans-serif!important;
 }
 
-.title{
+.myName{
   font-family: "Montserrat", sans-serif!important;
-  color: #3574F2
+  color: #081585
 }
+ div.background{
+   padding-bottom: 200px;
+ }

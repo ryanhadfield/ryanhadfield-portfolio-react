@@ -1,12 +1,62 @@
 ProjectCard {
   height: 300px !important;
+  width: 300px;
+  border-radius: 20px !important;
 }
 
 div.hoverable.card {
   height: 400px;
+  border-radius: 20px;
 }
 
 .portfolio {
   font-family: "Montserrat", sans-serif !important;
   color: #3574f2 !important;
+}
+
+.projectImg {
+  border-radius: 20px !important;
+}
+
+.swapify {
+  font-family: "Lemon", cursive;
+  color:#E7C515!important;
+}
+.swapifyBtn{
+  background-color: #CE1C00!important;
+  color: white!important;
+  font-family: 'Lemon', cursive !important;
+  font-weight: 50 !important;
+}
+
+.ndevrBtn{
+  background-color: #CE1C00!important;
+  color: white!important;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 50 !important;
+}
+.bestSnowBtn{
+  background-color: #CE1C00!important;
+  color: white!important;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 50 !important;
+}
+
+.swapifyRow{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+.ndevrRow{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+  padding: 20px !important;
+  background-color: rgb(234, 238, 238) !important;
+}
+
+.bestSnowRow{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+  padding: 20px !important;
+  
 }

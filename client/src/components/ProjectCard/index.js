@@ -3,29 +3,29 @@ import React from "react";
 // import { Link } from 'react-router-dom'
 import "./style.css";
 import "materialize-css";
-import { Card, Icon, CardTitle } from "react-materialize";
+import { Card, Icon, MediaBox } from "react-materialize";
+import { motion } from "framer-motion";
 
 function ProjectCard(props) {
       return (
-        <Card
-            className="hoverable"
-            closeIcon={<Icon>close</Icon>}
-            header={<CardTitle image={props.image} reveal waves="light" />}
-            reveal={<p>{props.info}</p>}
-            revealIcon={<Icon>more_vert</Icon>}
-            title={props.name}
-        >
-            <p>
-        <a target="_blank" href={props.website} >
-          Website
-        </a>
-      </p>  
-      <p>
-        <a target="_blank" href={props.github} >
-          GitHub
-        </a>
-      </p>      
-        </Card>
+        <MediaBox
+  id="MediaBox_7"
+  options={{
+    inDuration: 275,
+    onCloseEnd: null,
+    onCloseStart: null,
+    onOpenEnd: null,
+    onOpenStart: null,
+    outDuration: 200
+  }}
+>
+  <img
+    alt=""
+    src={props.image}
+    width="450"
+    className="responsive-img"
+  />
+</MediaBox>
 
     );
 }
