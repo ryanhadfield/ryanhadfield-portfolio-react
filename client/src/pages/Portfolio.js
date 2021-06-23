@@ -1,6 +1,5 @@
 import React from "react";
 import "materialize-css";
-import { Container, Col, Card, Row, Icon, Button } from "react-materialize";
 import "./portfolioStyle.css";
 import { motion } from "framer-motion";
 import projects from "./projects.json";
@@ -8,24 +7,28 @@ import ProjectCard from "./../components/ProjectCard/index.js";
 
 function Portfolio() {
   return (
-    <Container className="container my-5 py-5">
-      <motion.h1
-        className="display-4 text-dark my-5 center portfolio"
-        animate={{ y: 0, opacity: 1 }}
-        initial={{ y: -250, opacity: 0 }}
-        transition={{
-          delay: 0.5,
-          duration: 2,
-          type: "spring",
-          stiffness: 150,
-        }}
-      >
-        Portfolio
-      </motion.h1>
+    <div className="container my-5 py-5">
+      <div className="row center-align portfolioRow">
+        <div className="col">
+          <motion.h1
+            className="display-4 text-dark my-5 portfolio"
+            animate={{ y: 0, opacity: 1 }}
+            initial={{ y: -250, opacity: 0 }}
+            transition={{
+              delay: 0.5,
+              duration: 2,
+              type: "spring",
+              stiffness: 150,
+            }}
+          >
+            Portfolio
+          </motion.h1>
+        </div>
+      </div>
 
       {/* Swapify */}
-      <div className="row swapifyRow">
-        <div className="col s12 m12 l6 responsive-img">
+      <div className="row swapifyRow valign-wrapper">
+        <div className="col center s12">
           <motion.div
             initial={{ scale: 0, x: -1000 }}
             animate={{ scale: 1, x: 0 }}
@@ -35,6 +38,7 @@ function Portfolio() {
               damping: 20,
               delay: 1,
             }}
+            className="z-depth-4 hoverable"
           >
             <ProjectCard
               className="projectCard projectImg"
@@ -42,25 +46,27 @@ function Portfolio() {
             ></ProjectCard>
           </motion.div>
         </div>
-        <motion.div className="col s12 m12 l6 center"
-        initial={{ scale: 0, x: 1000 }}
-        animate={{ scale: 1, x: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-          delay: 1,
-        }}>
+        <div className="col center s12">
+        <motion.div
+          initial={{ scale: 0, x: 1000 }}
+          animate={{ scale: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 1,
+          }}>
           <motion.img
             alt="swapify"
             src="./../img/swapifyLogoTopDark-vector2.png"
             width="150"
             className="responsive-img"
-                      />
+          />
           <motion.p className="flow-text">
             Swapify is a React App that allows users to list, connect, and swap
             items with other nearby users in an easy to use and intuitive web
-            application
+            application.
+
           </motion.p>
           <a
             className="waves-effect wave-dark btn swapifyBtn"
@@ -69,20 +75,30 @@ function Portfolio() {
           >
             <i className="material-icons left">language</i>Swapify
           </a>
+          <a
+            className="waves-effect wave-dark btn githubBtn"
+            href="https://github.com/ryanhadfield/SWAPIFY"
+            target="_blank"
+          >
+            GitHub
+          </a>
         </motion.div>
+        </div>
       </div>
 
       {/* N-DEVR */}
       <div className="row ndevrRow">
-        <motion.div className="col s12 m12 l6 center"
-        initial={{ scale: 0, x: -1000 }}
-        animate={{ scale: 1, x: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-          delay: 1.75,
-        }}>
+        <motion.div
+          className="col s12 m12 l6 center "
+          initial={{ scale: 0, x: -1000 }}
+          animate={{ scale: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 1.75,
+          }}
+        >
           <img
             alt="ndevr"
             src="./../img/ndevr-black.png"
@@ -102,17 +118,25 @@ function Portfolio() {
           >
             <i className="material-icons left">language</i>N-DEVR
           </a>
+          <a
+            className="waves-effect wave-dark btn githubBtn"
+            href="https://github.com/ryanhadfield/N-DEVR"
+            target="_blank"
+          >
+            GitHub
+          </a>
         </motion.div>
-        <div className="col s12 m12 l6 responsive-img center">
+        <div className="col s12 m12 l6 center valign-wrapper">
           <motion.div
             initial={{ scale: 0, x: 1000 }}
-            animate={{ scale: 1, y: 20, x: 40 }}
+            animate={{ scale: 1, x: 0 }}
             transition={{
               type: "spring",
               stiffness: 260,
               damping: 20,
               delay: 1.75,
             }}
+            className="z-depth-4"
           >
             <ProjectCard
               className="projectCard projectImg"
@@ -123,8 +147,8 @@ function Portfolio() {
       </div>
 
       {/* Best Snow */}
-      <div className="row bestSnowRow">
-        <div className="col s12 m12 l6 responsive-img">
+      <div className="row bestSnowRow valign-wrapper">
+        <div className="col s12 m12 l6">
           <motion.div
             initial={{ scale: 0, x: -1000 }}
             animate={{ scale: 1, x: 0 }}
@@ -134,6 +158,7 @@ function Portfolio() {
               damping: 20,
               delay: 2.5,
             }}
+            className="z-depth-4"
           >
             <ProjectCard
               className="projectCard projectImg"
@@ -144,13 +169,13 @@ function Portfolio() {
         <motion.div
           className="col s12 m12 l6 center"
           initial={{ scale: 0, x: 1000 }}
-        animate={{ scale: 1, x: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-          delay: 2.5,
-        }}
+          animate={{ scale: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 2.5,
+          }}
         >
           <img
             alt="bestsnow"
@@ -171,9 +196,16 @@ function Portfolio() {
           >
             <i className="material-icons left">language</i>Best Snow
           </a>
+          <a
+            className="waves-effect wave-dark btn githubBtn"
+            href="https://github.com/ryanhadfield/Best-Snow"
+            target="_blank"
+          >
+            GitHub
+          </a>
         </motion.div>
       </div>
-    </Container>
+    </div>
   );
 }
 

@@ -11,7 +11,7 @@ div.hoverable.card {
 
 .portfolio {
   font-family: "Montserrat", sans-serif !important;
-  color: #3574f2 !important;
+  color: #081585 !important;
 }
 
 .projectImg {
@@ -58,5 +58,16 @@ div.hoverable.card {
   margin-top: 100px !important;
   margin-bottom: 100px !important;
   padding: 20px !important;
-  
+}
+
+.githubBtn {
+  background-color: #E7C515!important;
+  color: white!important;
+  font-family: 'Lemon', cursive !important;
+  font-weight: 50 !important;
+  margin: 10px !important;
+}
+.portfolioRow{
+  background-color: rgb(234, 238, 238) !important;
+  color: #081585 !important;
 }
