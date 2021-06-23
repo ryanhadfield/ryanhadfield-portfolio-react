@@ -4,18 +4,10 @@
 }
 
 .main {
-  /* background-color: #04ADBF; */
   margin-top: 50px !important;
   border-radius: 20px;
 }
 
-
-/* body {
-  background: radial-gradient(#F2E0D0, white);
-  background-size: cover !important;
-  background-position: center !important;
-  height: 100% !important;
-} */
 
 body,
 html {
@@ -29,8 +21,15 @@ html {
 
 .myName{
   font-family: "Montserrat", sans-serif!important;
-  color: #081585
+  color: #081585;
+  font-weight: 800 !important;
+  justify-content: center !important
 }
+
  div.background{
    padding-bottom: 200px;
+ }
+
+ .col {
+  justify-content: center !important
  }
