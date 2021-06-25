@@ -3,20 +3,29 @@ import "materialize-css";
 import { Container, Row, Col } from "react-materialize";
 import "./contactStyle.css";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+
 
 function Contact() {
     return (
         <Container className="container my-5 py-5">
-            <motion.h1 className="display-4 text-dark my-5 center portfolio"
-                animate={{ y: 0, opacity: 1 }}
-                initial={{ y: -250, opacity: 0 }}
-                transition={{
-                    delay: 1,
-                    duration: 2,
-                    type: "spring",
-                    stiffness: 150,
-                }}
-            >Contact</motion.h1>
+            <div className="row center-align portfolioRow">
+        <div className="col">
+          <motion.h1
+            className="display-4 text-dark my-5 portfolio"
+            animate={{ y: 0, opacity: 1 }}
+            initial={{ y: -250, opacity: 0 }}
+            transition={{
+              delay: 0.5,
+              duration: 2,
+              type: "spring",
+              stiffness: 150,
+            }}
+          >
+            Contact
+          </motion.h1>
+        </div>
+      </div>
             <Row>
                 <Col
                 s={1}>
@@ -35,7 +44,7 @@ function Contact() {
                 </Col>
                 <Col
                 s={11}>
-                    <motion.h3
+                    <motion.p
                         animate={{ x: 0, opacity: 1 }}
                         initial={{ x: 1000, opacity: 0 }}
                         transition={{
@@ -44,16 +53,16 @@ function Contact() {
                             type: "spring",
                             stiffness: 75,
                         }}
-                        className="left">
+                        className="left flow-text">
                         <a target="_blank" href="Ryan.Hadfield@gmail.com">Ryan.Hadfield@gmail.com</a>
-                </motion.h3>
+                </motion.p>
                 </Col>
             </Row>
             <Row>
                 <Col
                 s={1}>
         
-                    <motion.h2
+                    <motion.p
                         animate={{ x: 0, y: -5, opacity: 1 }}
                         initial={{ x: -1000, y: -5, opacity: 0 }}
                         transition={{
@@ -63,13 +72,14 @@ function Contact() {
                             stiffness: 75,
                         }}
                         className=" right valign-wrapper">
+                            <FaGithub />
                         GitHub
-                </motion.h2>
+                </motion.p>
             
                 </Col>
                 <Col
                 s={11}>
-                    <motion.h3
+                    <motion.p
                         animate={{ x: 0, opacity: 1 }}
                         initial={{ x: 1000, opacity: 0 }}
                         transition={{
@@ -80,14 +90,14 @@ function Contact() {
                         }}
                         className="left">
                         <a target="_blank" href="https://github.com/ryanhadfield">https://github.com/ryanhadfield</a>
-                </motion.h3>
+                </motion.p>
                 </Col>
             </Row>
             <Row>
                 <Col
                 s={1}>
         
-                    <motion.h2
+                    <motion.p
                         animate={{ x: 0, y: -5, opacity: 1 }}
                         initial={{ x: -1000, y: -5, opacity: 0 }}
                         transition={{
@@ -98,12 +108,12 @@ function Contact() {
                         }}
                         className=" right valign-wrapper">
                         LinkedIn
-                </motion.h2>
+                </motion.p>
             
                 </Col>
                 <Col
                 s={11}>
-                    <motion.h3
+                    <motion.p
                         animate={{ x: 0, opacity: 1 }}
                         initial={{ x: 1000, opacity: 0 }}
                         transition={{
@@ -114,7 +124,7 @@ function Contact() {
                         }}
                         className="left">
                         <a target="_blank" href="https://www.linkedin.com/in/ryan-hadfield/">https://www.linkedin.com/in/ryan-hadfield/</a>
-                </motion.h3>
+                </motion.p>
                 </Col>
             </Row>
         </Container>

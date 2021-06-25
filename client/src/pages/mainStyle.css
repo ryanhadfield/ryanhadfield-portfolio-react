@@ -8,28 +8,68 @@
   border-radius: 20px;
 }
 
-
 body,
 html {
   height: 100%;
 }
 
-.mainText{
-  color: #0D0D0D !important;
-  font-family: "Montserrat", sans-serif!important;
+.mainText {
+  color: #0d0d0d !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
-.myName{
-  font-family: "Montserrat", sans-serif!important;
+.myName {
+  font-family: "Montserrat", sans-serif !important;
   color: #081585;
   font-weight: 800 !important;
-  justify-content: center !important
+  justify-content: center !important;
 }
 
- div.background{
-   padding-bottom: 200px;
- }
+div.background {
+  padding-bottom: 200px;
+}
 
- .col {
-  justify-content: center !important
- }
+.col {
+  justify-content: center !important;
+}
+
+.line {
+  /* height: 4px; */
+  width: 75%;
+  border-bottom: 2px solid #ce1c00;
+  position: absolute;
+}
+
+.about {
+  color: #e7c515;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.downloadBtn {
+  background: #081585 !important;
+  /* margin-top: 25px !important */
+}
+
+/* div.material-placeholder {
+text-align: center !important;
+} */
+
+.resume2 {
+  margin-left: 10px !important;
+  margin-top: 25px !important;
+  
+}
+
+.resume1 {
+  margin-left: 10px !important;
+  margin-top: 25px !important;
+}
+.download {
+  display: flex;
+  justify-content: center;
+}
+
+.resumeRow{
+  display: flex;
+  justify-content: center;
+}

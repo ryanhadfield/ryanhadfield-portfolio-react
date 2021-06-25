@@ -1,23 +1,13 @@
 import React from "react";
 import "materialize-css";
-import { Container } from "react-materialize";
-import './mainStyle.css';
+import { Parallax, MediaBox, Col, Row } from "react-materialize";
+import "./mainStyle.css";
 import { motion } from "framer-motion";
 
 function Main() {
   return (
     <div className="background">
-      <motion.div
-        className="container main "
-        animate={{ x: 0, opacity: 1 }}
-        initial={{ x: 500, opacity: 0 }}
-        transition={{
-          delay: 1,
-          duration: 1,
-          type: "spring",
-          stiffness: 150,
-        }}
-      >
+      <motion.div className="container main">
         <div className="row">
           <div className="col center">
             <motion.img
@@ -36,37 +26,158 @@ function Main() {
             />
           </div>
         </div>
-        <h1>
-          <motion.p className="display-3 myName center"
-            animate={{ x: 10, opacity: 1, scale: 1, color: "#081585" }}
-            initial={{ opacity: 0, scale: 0 }}
+
+        <div className="row center">
+          <div className="col">
+            <h1>
+              <motion.p
+                className="display-3 myName "
+                animate={{ x: 0, opacity: 1, scale: 1, color: "#081585" }}
+                initial={{ opacity: 0, scale: 0 }}
+                transition={{
+                  delay: 2.1,
+                  duration: 2,
+                  type: "spring",
+                  stiffness: 150,
+                }}
+              >
+                Ryan Hadfield
+              </motion.p>
+            </h1>
+          </div>
+        </div>
+        <div className="row">
+          <motion.div
+            className="col"
+            animate={{ x: 0, opacity: 1 }}
+            initial={{ x: -250, opacity: 0 }}
             transition={{
-              delay: 2.1,
+              delay: 1,
               duration: 2,
               type: "spring",
               stiffness: 150,
             }}
-          >Ryan Hadfield</motion.p>
-          {/* <motion.span className="display-3 myName"
-          animate={{ x: 10 , opacity: 1, scale: 1, color: "#081585" }}
-          initial={{ opacity: 0, scale: 0 }}
-          transition={{
-            delay: 2.1,
-            duration: 2,
-            type: "spring",
-            stiffness: 150,
-          }}
-        >Ryan Hadfield</motion.span> */}
-        </h1>
-        <p className="flow-text mainText">
-          Hi! I'm <b>Ryan</b>, a native Marylander now living in the
-        beautiful Wasatch Mtns of Utah.  A Full Stack Web Developer with a background in sales, project management, marketing, and product development. Graduate of the University of Utah Coding Boot Camp with skills in HTML, CSS, JavaScript, and MERN stack. Excited about collaborating with others, learning new technologies, and building something innovative. I'm passionate about technology, the outdoors, travel, and design.
-      </p>
-        <p className="flow-text mainText">
-          I've spent the last 20 years working in the outdoor sport & toy / collectible industries.
-          I've worked with brands such as Black Diamond, Marvel, Disney, Grivel, and REI.  As a full-stack web developer, I'm excited to combine my years of experience in business with a career in tech.
-      </p>
+          >
+            <h2 className="about">About</h2>
+            <motion.div class="line"></motion.div>
+          </motion.div>
+        </div>
+        <div className="row">
+          <motion.div
+            className="col"
+            animate={{ x: 0, opacity: 1 }}
+            initial={{ x: 500, opacity: 0 }}
+            transition={{
+              delay: 1,
+              duration: 1,
+              type: "spring",
+              stiffness: 150,
+            }}
+          >
+            <p className="flow-text mainText">
+              Hi! I'm <b className="ryan">Ryan</b>, a native Marylander now
+              living in the beautiful Wasatch Mtns of Utah. A Full Stack Web
+              Developer with a background in sales, project management,
+              marketing, and product development. Graduate of the University of
+              Utah Coding Boot Camp with skills in HTML, CSS, JavaScript, and
+              MERN stack. Excited about collaborating with others, learning new
+              technologies, and building something innovative. I'm passionate
+              about technology, the outdoors, travel, and design.
+            </p>
+            <p className="flow-text mainText">
+              I've spent the last 20 years working in the outdoor sport & toy /
+              collectible industries. I've worked with brands such as Black
+              Diamond, Marvel, Disney, Grivel, and REI. As a full-stack web
+              developer, I'm excited to combine my years of experience in
+              business with a career in tech.
+            </p>
+          </motion.div>
+        </div>
       </motion.div>
+      <Parallax
+        image={
+          <img
+            alt="slot canyon"
+            src="https://images.unsplash.com/photo-1590598016917-7a2bf7d1d5e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
+          />
+        }
+        options={{
+          responsiveThreshold: 0,
+        }}
+      />
+      <div className="container skillsSection my-4">
+        <div className="row ">
+          <motion.div
+            className="col"
+            animate={{ x: 0, opacity: 1 }}
+            initial={{ x: -250, opacity: 0 }}
+            transition={{
+              delay: 1,
+              duration: 2,
+              type: "spring",
+              stiffness: 150,
+            }}
+          >
+            <h2 className="about">Resume & Technical Skills</h2>
+            <motion.div class="line"></motion.div>
+          </motion.div>
+        </div>
+        <div className="container align-center">
+          <div className="row center resumeRow">
+            <MediaBox
+              id="MediaBox_7"
+              options={{
+                inDuration: 275,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                outDuration: 200,
+              }}
+              className="z-depth-3 resume1"
+            >
+              <motion.img
+                src="./../img/resumeImg.png"
+                id="resume"
+                className="m-3 z-depth-3"
+                alt="resume"
+                height="450"
+              />
+            </MediaBox>
+            <MediaBox
+              id="MediaBox_7"
+              options={{
+                inDuration: 275,
+                onCloseEnd: null,
+                onCloseStart: null,
+                onOpenEnd: null,
+                onOpenStart: null,
+                outDuration: 200,
+              }}
+              className="z-depth-3 resume2"
+            >
+              <motion.img
+                src="./../img/resumeImg2.png"
+                id="resume"
+                className="m-3 z-depth-3 resume"
+                alt="resume"
+                height="450"
+              />
+            </MediaBox>
+          </div>
+          <div className="row">
+            <div className="col download">
+              <a
+                href="./../img/RyanHadfield-DevResume.pdf"
+                className="waves-effect btn-large downloadBtn z-depth-3"
+                download
+              >
+                <i class="material-icons left">file_download</i>Download
+          </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

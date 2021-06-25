@@ -11,7 +11,7 @@ const CustomFooter = (props) => {
         className="valign-wrapper align-center"
       // copyrights="&copy; 2021 Ryan Hadfield"
       >
-        <span className="center">&copy; 2021 Ryan Hadfield</span>
+        <span className="">&copy; 2021 Ryan Hadfield</span>
       </footer>
     </div>
   );

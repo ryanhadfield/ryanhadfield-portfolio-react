@@ -14,7 +14,7 @@ const CustomNavbar = (props) => {
         <motion.a
           className="brand-logo"
           href="/"
-          whileHover={{ scale: 1.2 }}
+          // whileHover={{ scale: 1.2 }}
           // whileTap={{ scale: 1.2 }}
         >
           <img
@@ -41,6 +41,9 @@ const CustomNavbar = (props) => {
         preventScrolling: true,
       }}
     >
+      <NavItem className="navItem flow-text aboutLink" href="/">
+        About
+      </NavItem>
       <NavItem className="navItem flow-text portfolioLink" href="/portfolio">
         Portfolio
       </NavItem>
