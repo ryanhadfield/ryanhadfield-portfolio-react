@@ -6,3 +6,11 @@ h3 {
   font-family: "Montserrat", sans-serif !important;
   color:#081585 !important;
 }
+
+.contactInfo {
+  text-align: left !important;
+}
+
+.contactFont {
+  font-family: "Montserrat", sans-serif !important;
+}

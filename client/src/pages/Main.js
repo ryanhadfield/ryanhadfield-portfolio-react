@@ -27,11 +27,11 @@ function Main() {
           </div>
         </div>
 
-        <div className="row center">
+        <div className="row center nameRow">
           <div className="col">
             <h1>
               <motion.p
-                className="display-3 myName "
+                className="display-3 myName"
                 animate={{ x: 0, opacity: 1, scale: 1, color: "#081585" }}
                 initial={{ opacity: 0, scale: 0 }}
                 transition={{
@@ -94,10 +94,12 @@ function Main() {
           </motion.div>
         </div>
       </motion.div>
+      <div className="container">
       <Parallax
         image={
           <img
             alt="slot canyon"
+      
             src="https://images.unsplash.com/photo-1590598016917-7a2bf7d1d5e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
           />
         }
@@ -105,6 +107,7 @@ function Main() {
           responsiveThreshold: 0,
         }}
       />
+      </div>
       <div className="container skillsSection my-4">
         <div className="row ">
           <motion.div
@@ -172,7 +175,7 @@ function Main() {
                 className="waves-effect btn-large downloadBtn z-depth-3"
                 download
               >
-                <i class="material-icons left">file_download</i>Download
+                <i class="material-icons left">file_download</i>Download CV
           </a>
             </div>
           </div>

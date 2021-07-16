@@ -25,6 +25,9 @@ html {
   justify-content: center !important;
 }
 
+.nameRow {
+  background-color: rgb(234, 238, 238) !important;
+}
 div.background {
   padding-bottom: 200px;
 }
