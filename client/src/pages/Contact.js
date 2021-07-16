@@ -39,7 +39,7 @@ function Contact() {
                             stiffness: 75,
                         }}
                         >
-                        <FaEnvelope size="3em" color="#E7C515"/>
+                        <a target="_blank" href="ryan.hadfield@gmail.com"><FaEnvelope size="3em" color="#E7C515"/></a>
                         {/* GitHub */}
                     </motion.p>
                 </Col>
@@ -72,7 +72,7 @@ function Contact() {
                             type: "spring",
                             stiffness: 75,
                         }}>
-                        <FaGithub size="3em" color="#CE1C00"/>
+                        <a target="_blank" href="https://github.com/ryanhadfield"><FaGithub size="3em" color="#CE1C00"/></a>
                         {/* GitHub */}
                     </motion.p>
 
@@ -107,7 +107,8 @@ function Contact() {
                             type: "spring",
                             stiffness: 75,
                         }}>
-                        <FaLinkedin size="3em" color="081585"/>
+                            <a target="_blank" href="https://www.linkedin.com/in/ryan-hadfield/"><FaLinkedin size="3em" color="081585"/></a>
+                        
                     </motion.p>
                 </Col>
                 <Col
