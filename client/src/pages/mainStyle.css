@@ -27,6 +27,8 @@ html {
 
 .nameRow {
   background-color: rgb(234, 238, 238) !important;
+  border-radius: 40px !important;
+
 }
 div.background {
   padding-bottom: 200px;

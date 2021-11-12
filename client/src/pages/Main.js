@@ -1,8 +1,9 @@
 import React from "react";
 import "materialize-css";
-import { Parallax, MediaBox, Col, Row } from "react-materialize";
+import { Parallax, MediaBox } from "react-materialize";
 import "./mainStyle.css";
 import { motion } from "framer-motion";
+import { FaNode, FaJs, FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaGithubSquare } from "react-icons/fa";
 
 function Main() {
   return (
@@ -27,8 +28,8 @@ function Main() {
           </div>
         </div>
 
-        <div className="row center nameRow">
-          <div className="col">
+        <div className="row center">
+          <div className="col nameRow z-depth-3">
             <h1>
               <motion.p
                 className="display-3 myName"
@@ -95,18 +96,17 @@ function Main() {
         </div>
       </motion.div>
       <div className="container">
-      <Parallax
-        image={
-          <img
-            alt="slot canyon"
-      
-            src="https://images.unsplash.com/photo-1590598016917-7a2bf7d1d5e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
-          />
-        }
-        options={{
-          responsiveThreshold: 0,
-        }}
-      />
+        <Parallax
+          image={
+            <img
+              alt="slot canyon"
+              src="https://images.unsplash.com/photo-1590598016917-7a2bf7d1d5e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
+            />
+          }
+          options={{
+            responsiveThreshold: 0,
+          }}
+        />
       </div>
       <div className="container skillsSection my-4">
         <div className="row ">
@@ -176,12 +176,43 @@ function Main() {
                 download
               >
                 <i class="material-icons left">file_download</i>Download CV
-          </a>
+              </a>
             </div>
+          </div>
+          <div className="row nameRow z-depth-3">
+            <motion.div
+              className="col m-3 center"
+              whileHover={{ scale: 1.5, color: '#e7c515' }}>
+              <a><FaHtml5 size="3em" color="#CE1C00" /></a>
+            </motion.div>
+            <motion.div className="col m-3 center"
+              whileHover={{ scale: 1.5 }}>
+              <a><FaCss3Alt size="3em" color="#CE1C00" /></a>
+            </motion.div>
+            <motion.div className="col m-3 center"
+              whileHover={{ scale: 1.5 }}>
+              <a><FaJs size="3em" color="#CE1C00" /></a>
+            </motion.div>
+            <motion.div className="col m-3 center"
+              whileHover={{ scale: 1.5 }}>
+              <a><FaNode size="3em" color="#CE1C00" /></a>
+            </motion.div>
+            <motion.div className="col m-3 center"
+              whileHover={{ scale: 1.5 }}>
+              <a><FaGithubSquare size="3em" color="#CE1C00" /></a>
+            </motion.div>
+            <motion.div className="col m-3 center"
+              whileHover={{ scale: 1.5 }}>
+              <a><FaReact size="3em" color="#CE1C00" /></a>
+            </motion.div>
+            <motion.div className="col m-3 center"
+              whileHover={{ scale: 1.5 }}>
+              <a><FaDatabase size="3em" color="#CE1C00" /></a>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
