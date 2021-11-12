@@ -185,7 +185,7 @@ function Portfolio() {
           />
           <p className="flow-text">
             With Best Snow you have the ability to see, at a glance, the
-            snowpack levels in the western United States. You’ll be able decide
+            snowpack levels in the western United States. You’ll be able to decide
             if your want to hit your local mtns or venture out to other ranges
             in the US.
           </p>
