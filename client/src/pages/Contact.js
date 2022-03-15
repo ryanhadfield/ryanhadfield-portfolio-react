@@ -7,7 +7,7 @@ import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 
 function Contact() {
-        return (
+    return (
         <Container className="container my-5 py-5">
             <div className="row center portfolioRow">
                 <div className="col">
@@ -38,9 +38,9 @@ function Contact() {
                             type: "spring",
                             stiffness: 75,
                         }}
-                        >
-                        <a target="_blank" href="ryan.hadfield@gmail.com"><FaEnvelope size="3em" color="#E7C515"/></a>
-                        {/* GitHub */}
+                    >
+                        <a target="_blank" href="mailto:ryan.hadfield@gmail.com"><FaEnvelope size="3em" color="#E7C515" /></a>
+                        {/* Email */}
                     </motion.p>
                 </Col>
                 <Col
@@ -55,13 +55,14 @@ function Contact() {
                             stiffness: 75,
                         }}
                         className="contactFont flow-text">
-                        <a target="_blank" href="ryan.hadfield@gmail.com">Email</a>
+                        <a target="_blank" href="mailto:ryan.hadfield@gmail.com">Email</a>
+                        {/* Email */}
                     </motion.p>
                 </Col>
             </Row>
             <Row>
                 <Col
-            
+
                     className="right-align">
                     <motion.p
                         animate={{ x: 0, y: -5, opacity: 1 }}
@@ -72,13 +73,13 @@ function Contact() {
                             type: "spring",
                             stiffness: 75,
                         }}>
-                        <a target="_blank" href="https://github.com/ryanhadfield"><FaGithub size="3em" color="#CE1C00"/></a>
+                        <a target="_blank" href="https://github.com/ryanhadfield"><FaGithub size="3em" color="#CE1C00" /></a>
                         {/* GitHub */}
                     </motion.p>
 
                 </Col>
                 <Col
-                
+
                     className="">
                     <motion.p
                         animate={{ x: 0, opacity: 1 }}
@@ -107,8 +108,8 @@ function Contact() {
                             type: "spring",
                             stiffness: 75,
                         }}>
-                            <a target="_blank" href="https://www.linkedin.com/in/ryan-hadfield/"><FaLinkedin size="3em" color="081585"/></a>
-                        
+                        <a target="_blank" href="https://www.linkedin.com/in/ryan-hadfield/"><FaLinkedin size="3em" color="081585" /></a>
+
                     </motion.p>
                 </Col>
                 <Col

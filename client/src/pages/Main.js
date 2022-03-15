@@ -183,7 +183,7 @@ function Main() {
             <motion.div
               className="col m-3 center"
               whileHover={{ scale: 1.5, color: '#e7c515' }}>
-              <a><FaHtml5 size="3em" color="#CE1C00" /></a>
+              <a><FaHtml5 size="3em" color="#CE1C00" class="tooltipped" data-position="bottom" data-tooltip="I am a tooltip"/></a>
             </motion.div>
             <motion.div className="col m-3 center"
               whileHover={{ scale: 1.5 }}>
