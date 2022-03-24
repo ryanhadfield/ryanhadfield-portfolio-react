@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import logo from './RH-color-logo.png';
 import Main from "./pages/Main";
@@ -8,9 +8,16 @@ import CustomNavbar from './components/Navbar';
 // import Wrapper from "./components/Wrapper";
 import CustomFooter from './components/Footer';
 import './App.css';
+import ReactGA from 'react-ga';
 
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('UA-193922812-1');
+    ReactGA.pageview('/');
+  }, [])
+
   return (
     <Router>
       <div className="App">
