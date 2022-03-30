@@ -4,6 +4,7 @@ import { Parallax, MediaBox } from "react-materialize";
 import "./mainStyle.css";
 import { motion } from "framer-motion";
 import { FaNode, FaJs, FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaGithubSquare } from "react-icons/fa";
+import ReactTooltip from "react-tooltip";
 
 function Main() {
   return (
@@ -182,32 +183,38 @@ function Main() {
           <div className="row nameRow z-depth-3">
             <motion.div
               className="col m-3 center"
-              whileHover={{ scale: 1.5, color: '#e7c515' }}>
-              <a><FaHtml5 size="3em" color="#CE1C00" class="tooltipped" data-position="bottom" data-tooltip="I am a tooltip"/></a>
-            </motion.div>
-            <motion.div className="col m-3 center"
               whileHover={{ scale: 1.5 }}>
-              <a><FaCss3Alt size="3em" color="#CE1C00" /></a>
+              <a data-tip="HTML5"><ReactTooltip /><FaHtml5 size="3em" color="#CE1C00" /></a>
             </motion.div>
-            <motion.div className="col m-3 center"
+            <motion.div
+              className="col m-3 center"
               whileHover={{ scale: 1.5 }}>
-              <a><FaJs size="3em" color="#CE1C00" /></a>
+              <a data-tip="CSS3"><FaCss3Alt size="3em" color="#CE1C00" /></a>
             </motion.div>
-            <motion.div className="col m-3 center"
+            <motion.div
+              className="col m-3 center"
               whileHover={{ scale: 1.5 }}>
-              <a><FaNode size="3em" color="#CE1C00" /></a>
+              <a data-tip="Javascript"><FaJs size="3em" color="#CE1C00" /></a>
             </motion.div>
-            <motion.div className="col m-3 center"
+            <motion.div
+              className="col m-3 center"
               whileHover={{ scale: 1.5 }}>
-              <a><FaGithubSquare size="3em" color="#CE1C00" /></a>
+              <a data-tip="Node.JS"><FaNode size="3em" color="#CE1C00" /></a>
             </motion.div>
-            <motion.div className="col m-3 center"
+            <motion.div
+              className="col m-3 center"
               whileHover={{ scale: 1.5 }}>
-              <a><FaReact size="3em" color="#CE1C00" /></a>
+              <a data-tip="GitHub"><FaGithubSquare size="3em" color="#CE1C00" /></a>
             </motion.div>
-            <motion.div className="col m-3 center"
+            <motion.div
+              className="col m-3 center"
               whileHover={{ scale: 1.5 }}>
-              <a><FaDatabase size="3em" color="#CE1C00" /></a>
+              <a data-tip="React.JS"><FaReact size="3em" color="#CE1C00" /></a>
+            </motion.div>
+            <motion.div
+              className="col m-3 center"
+              whileHover={{ scale: 1.5 }}>
+              <a data-tip="MongoDB"><FaDatabase size="3em" color="#CE1C00" /></a>
             </motion.div>
           </div>
         </div>
