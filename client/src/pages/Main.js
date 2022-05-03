@@ -79,7 +79,7 @@ function Main() {
             <p className="flow-text mainText">
               Hi! I'm <b className="ryan">Ryan</b>, a native Marylander now
               living in the beautiful Wasatch Mtns of Utah. A Full Stack Web
-              Developer with a background in sales, project management,
+              Developer with a background in sales, Ecommerce, product management,
               marketing, and product development. Graduate of the University of
               Utah Coding Boot Camp with skills in HTML, CSS, JavaScript, and
               MERN stack. Excited about collaborating with others, learning new
@@ -219,6 +219,7 @@ function Main() {
           </div>
         </div>
       </div>
+
     </div >
   );
 }
